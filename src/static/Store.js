@@ -2,7 +2,6 @@
 export default {
     fetch: function() {
     let data = window.JSON.parse(window.localStorage.getItem('z'));
-    console.log(data);
         return  data|| [
         { logo: "A", url: "http://www.acfun.cn" },
         { logo: "Y", url: "https://www.yuque.com/dashboard" },
@@ -28,6 +27,5 @@ export default {
           .replace("www.", "")
           .replace(/\/.*/, "");
       },
-      
       
    }
