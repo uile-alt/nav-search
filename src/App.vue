@@ -46,7 +46,7 @@ export default {
       Bclass: "",
       Cclass: "borders",
       hashMap: store.fetch(),
-      isActive: JSON.parse(localStorage.getItem("y")),
+      isActive: JSON.parse(localStorage.getItem("y")) || true,
     };
   },
   components: {
