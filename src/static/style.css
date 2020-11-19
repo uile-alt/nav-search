@@ -9,6 +9,11 @@
   margin: 0;
   padding: 0;
 }
+
+* {
+  transition: color 0.4s, background 0.4s;
+  transition-timing-function: ease-in;
+}
 ul,
 ol {
   list-style: none;
