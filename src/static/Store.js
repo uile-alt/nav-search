@@ -1,7 +1,7 @@
 
 export default {
     fetch: function() {
-    let data = window.JSON.parse(window.localStorage.getItem('x'));
+    let data = window.JSON.parse(window.localStorage.getItem('z'));
     console.log(data);
         return  data|| [
         { logo: "A", url: "http://www.acfun.cn" },
@@ -19,7 +19,7 @@ export default {
     },
     setData(value){
         const string = JSON.stringify(value);
-        window.localStorage.setItem("x", string);
+        window.localStorage.setItem("z", string);
     },
     simplifyUrl(url){
         return url
@@ -29,7 +29,5 @@ export default {
           .replace(/\/.*/, "");
       },
       
-      setFlag(value){
-            window.localStorage.setItem('y',value)
-      }
+      
    }
