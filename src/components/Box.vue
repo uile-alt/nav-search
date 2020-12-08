@@ -34,7 +34,7 @@ export default {
   },
   methods: {
     jump() {
-      window.open(this.title.url);
+      window.open(this.title.url, "_self");
     },
     del() {
       this.$emit("delete", this.index);
@@ -74,12 +74,22 @@ export default {
   position: absolute;
   right: 10px;
   top: 5px;
-  display: none;
+  display: block;
   cursor: default;
 }
-.siteList .site:hover > .close {
-  display: block;
-  animation: first 0.5s ease-in-out forwards;
+
+@media (min-width: 500px) {
+  .close {
+    position: absolute;
+    right: 10px;
+    top: 5px;
+    display: none;
+    cursor: default;
+  }
+  .siteList .site:hover > .close {
+    display: block;
+    animation: first 0.5s ease-in-out forwards;
+  }
 }
 .icon {
   width: 1em;

@@ -58,7 +58,7 @@ export default {
       const { key } = e; //key=e.key简写
       for (let i = 0; i < this.hashMap.length; i++) {
         if (this.hashMap[i].logo.toLowerCase() === key) {
-          window.open(this.hashMap[i].url);
+          window.open(this.hashMap[i].url, "_self");
         }
       }
     });
