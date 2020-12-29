@@ -54,7 +54,7 @@ export default {
   },
 
   created() {
-    window.addEventListener("keydown", (e) => {
+    window.addEventListener("keypress", (e) => {
       const { key } = e; //key=e.key简写
       for (let i = 0; i < this.hashMap.length; i++) {
         if (this.hashMap[i].logo.toLowerCase() === key) {
